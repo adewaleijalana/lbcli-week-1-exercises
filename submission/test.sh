@@ -35,7 +35,7 @@ check_cmd "Treasure wallet creation"
 # Generate an address for mining in the treasure wallet
 # STUDENT TASK: Generate a new address in the treasurewallet
 # WRITE YOUR SOLUTION BELOW:
-TREASURE_ADDR=
+TREASURE_ADDR=$(bitcoin-cli -regtest -rpcwallet=treasurewallet getnewaddress)
 check_cmd "Address generation"
 echo "Mining to address: $TREASURE_ADDR"
 
