@@ -59,6 +59,7 @@ echo "CHALLENGE 3: Create a set of addresses for your exploration"
 echo "---------------------------------------------------------"
 echo "The treasure hunt requires 4 different types of addresses to collect funds."
 echo "Generate one of each address type (legacy, p2sh-segwit, bech32, bech32m)"
+
 # STUDENT TASK: Generate addresses of each type
 # WRITE YOUR SOLUTION BELOW:
 LEGACY_ADDR=$(bitcoin-cli -regtest -rpcwallet=btrustwallet getnewaddress LEGACY_ADDR legacy)
